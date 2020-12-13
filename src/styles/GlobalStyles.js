@@ -483,22 +483,12 @@ body {
     color: rgb(49, 80, 51);
 }
 
-
-
 .header__nav-logo {
     width: 7rem;
     height: 100%
 }
 
-.main__bg {
-    width: 100%;
-    height: 450px;
-    background-image: linear-gradient(180deg, rgba(2, 90, 0, 0.175) 78.65%, rgba(0, 0, 0, 0.665) 99.99%, rgba(255, 255, 255, 0) 100%), url(/Images/120974832_337842137285282_3272719582638428414_n.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: bottom;
-}
+
 
 .price__bg {
     width: 100%;
@@ -633,13 +623,7 @@ body {
 }
 
 
-.section-features {
-    margin-top: 25rem;
-  padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(32, 158, 46, 0.8), rgba(23,110,32, 0.8)), url(../Images/strimmer.jpg);
-  background-size: cover;
-  background-position: center center;
-}
+
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -650,14 +634,14 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
   .feature-box__icon {
-    font-size: 6rem;
+    font-size: 6rem; 
     margin-bottom: .5rem;
-    background-image: linear-gradient(to right, #7ed56f, #01642a);
+   background-image: linear-gradient(to right, #7ed56f, #01642a); 
     display: inline-block;
     -webkit-background-clip: text;
-    color: transparent;
+    color: transparent; 
     padding-top:1rem;
-    }
+  }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
@@ -1022,6 +1006,55 @@ body {
     color: #176e20;
 }
 
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc((2 * ((100% - 2 * 6rem) / 3)) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc((2 * (100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc((3 * (100% - 3 * 6rem) / 4) + 6rem * 2); }
+  
+
+
+  @media only screen and (max-width: 702px) {
+
+    .row .col-1-of-2 {
+      width:100%;
+      padding: 2rem;
+      margin-bottom:3rem;
+      height: 200px;
+    }
+    .row .col-1-of-4 {
+      width:100%;
+      padding:0 25% 2rem 25%;
+      
+    }
+
+    .row .col-1-of-3 {
+      width:100%;
+      padding:0 25% 2rem 25%;
+    }
+
+  }
 
 `;
 

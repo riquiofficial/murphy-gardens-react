@@ -85,6 +85,11 @@ const Header = () => {
         <div class="header__nav-inside">
           <ul class="header__nav-items">
             <li class="header__li-nav">
+              <a href="/index.html" class="header__nav-link">
+                Home
+              </a>
+            </li>
+            <li class="header__li-nav">
               <a href="/about.html" class="header__nav-link">
                 About
               </a>
