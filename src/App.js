@@ -1,7 +1,12 @@
+import GlobalStyles from "./styles/GlobalStyles";
+import Header from "./components/Header";
+
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <GlobalStyles />
+      <Header />
+      <h1>Welcome to Murphy Gardens</h1>
     </div>
   );
 }
