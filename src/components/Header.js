@@ -3,16 +3,21 @@ import phone from "../images/iconmonstr-smartphone-7 1.svg";
 import time from "../images/iconmonstr-time-3 1.svg";
 import facebook from "../images/iconmonstr-facebook-6.svg";
 import logo from "../images/logo.png";
+//router
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const { pathName } = useLocation();
   return (
     <header class="header" id="header">
-      <div class="header__logo-large">
-        <img
-          class="header__logo-large--img"
-          src={logoLarge}
-          alt="Murphy Gardens Logo"
-        />
+      <div className="header__logo-large">
+        <Link to="/">
+          <img
+            class="header__logo-large--img"
+            src={logoLarge}
+            alt="Murphy Gardens Logo"
+          />
+        </Link>
       </div>
       <div class="header__info">
         <div class="header__hours">
@@ -53,14 +58,14 @@ const Header = () => {
           <nav class="navigation__nav">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="/index.html" class="navigation__link">
+                <Link to="/" class="navigation__link">
                   home
-                </a>
+                </Link>
               </li>
               <li class="navigation__item">
-                <a href="/about.html" class="navigation__link">
+                <Link to="/about" class="navigation__link">
                   About
-                </a>
+                </Link>
               </li>
               <li class="navigation__item">
                 <a href="/pricing.html" class="navigation__link">
@@ -85,14 +90,14 @@ const Header = () => {
         <div class="header__nav-inside">
           <ul class="header__nav-items">
             <li class="header__li-nav">
-              <a href="/index.html" class="header__nav-link">
+              <Link to="/" class="header__nav-link">
                 Home
-              </a>
+              </Link>
             </li>
             <li class="header__li-nav">
-              <a href="/about.html" class="header__nav-link">
+              <Link to="/about" class="header__nav-link">
                 About
-              </a>
+              </Link>
             </li>
             <li class="header__li-nav">
               <a href="gallery.html" class="header__nav-link">

@@ -593,21 +593,6 @@ body {
     .composition:hover .composition__photo:not(:hover) {
       transform: scale(0.95); }
 
-
-.about__bg {
-    width: 100%;
-    height: 140rem;
-    background-image: linear-gradient(179.99deg, rgba(0, 0, 0, 0.75) 99.97%, rgba(12, 155, 12, 0.15) 99.98%, rgba(17, 87, 17, 0) 99.99%), url(/Images/about.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center top;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-
 .gallery__bg {
     width: 100%;
     height: 450px;
@@ -996,11 +981,7 @@ body {
       transform: translateY(2rem) scale(1);
       filter: blur(3px) brightness(80%); }
 
-@media only screen and (max-width: 452px) {
-    .about__bg {
-        height: 160rem;
-    }
-}
+
 
 .text-green {
     color: #176e20;
