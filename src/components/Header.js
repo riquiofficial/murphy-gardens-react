@@ -165,7 +165,7 @@ const Line = styled(motion.div)`
   background: #2d652c;
   width: 0%;
   position: absolute;
-  bottom: -60%;
+  bottom: -80%;
   left: 20%;
   z-index: 2000;
 `;

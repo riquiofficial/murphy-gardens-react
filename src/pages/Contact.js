@@ -1,10 +1,18 @@
 import strimmer from "../images/strimmer.jpg";
 import styled from "styled-components";
+import ScrollTop from "../components/ScrollTop";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animations";
 
 const Contact = () => {
   return (
     <>
-      <ContactBg>
+      <ContactBg
+        exit="exit"
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+      >
         <div className="contact-form">
           <div className="contact">
             <form
@@ -76,12 +84,13 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        <ScrollTop />
       </section>
     </>
   );
 };
 
-const ContactBg = styled.div`
+const ContactBg = styled(motion.div)`
   width: 100%;
   height: 600px;
   background: linear-gradient(

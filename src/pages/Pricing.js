@@ -1,10 +1,19 @@
 import hedge from "../images/hedge.jpg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import ScrollTop from "../components/ScrollTop";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animations";
 
 const Pricing = () => {
   return (
-    <main>
+    <motion.main
+      className="main"
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <PricingBg>
         <h1 className="main__services-heading-2">Pricing</h1>
       </PricingBg>
@@ -24,7 +33,8 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-    </main>
+      <ScrollTop />
+    </motion.main>
   );
 };
 

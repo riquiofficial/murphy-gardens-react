@@ -466,6 +466,11 @@ body {
     color: #FFFBFB;
     text-decoration: none;
     font-weight: 500;
+    transition: all .2s ease; 
+}
+
+.header__nav-link:hover {
+  color: #2D652C;
 }
 
 .header__nav-networks {

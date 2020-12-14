@@ -1,7 +1,10 @@
 //packages
+import { motion } from "framer-motion";
 import styled from "styled-components";
 //components
 import Features from "../components/Features";
+import ScrollTop from "../components/ScrollTop";
+import { pageAnimation } from "../animations";
 //images
 import garden1 from "../images/garden-1.webp";
 import garden2 from "../images/garden-2.webp";
@@ -10,7 +13,13 @@ import background from "../images/image2.webp";
 
 const Home = () => {
   return (
-    <>
+    <motion.div
+      className="main"
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <section className="main">
         <MainBg />
         <div className="section-about">
@@ -55,7 +64,8 @@ const Home = () => {
       </section>
 
       <Features />
-    </>
+      <ScrollTop />
+    </motion.div>
   );
 };
 

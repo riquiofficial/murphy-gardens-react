@@ -3,6 +3,9 @@ import styled from "styled-components";
 import bench from "../images/bench.jpg";
 //components
 import Card from "../components/Card";
+import ScrollTop from "../components/ScrollTop";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animations";
 
 const elements = [
   [1, 2, 3],
@@ -12,7 +15,12 @@ const elements = [
 
 const Gallery = () => {
   return (
-    <div>
+    <motion.div
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <GalleryBG>
         <h1 className="main__services-heading-2">Gallery</h1>
       </GalleryBG>
@@ -48,7 +56,8 @@ const Gallery = () => {
           );
         })}
       </div>
-    </div>
+      <ScrollTop />
+    </motion.div>
   );
 };
 

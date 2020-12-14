@@ -1,12 +1,19 @@
 import aboutBg from "../images/about.jpg";
 import userLogo from "../images/iconmonstr-user-5-240.png";
 import styled from "styled-components";
-
-import { Link } from "react-router-dom";
+import ScrollTop from "../components/ScrollTop";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animations";
 
 const About = () => {
   return (
-    <div className="main">
+    <motion.div
+      className="main"
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <div className="container">
         <AboutBg>
           <h1 className="main__services-heading-about">About Murphy Gardens</h1>
@@ -89,14 +96,15 @@ const About = () => {
             </p>
             <p className="main__services-paragraph">
               We are currently running our winter services which can be found{" "}
-              <Link to="/#section-features" className="btn-text">
+              <a href="/#section-features" className="btn-text">
                 here
-              </Link>
+              </a>
             </p>
           </div>
         </div>
       </div>
-    </div>
+      <ScrollTop />
+    </motion.div>
   );
 };
 
