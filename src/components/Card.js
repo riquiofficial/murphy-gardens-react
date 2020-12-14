@@ -26,7 +26,7 @@ const Card = (id) => {
     <StyledCard>
       <div className="card">
         <div className={classFront}></div>
-        <div class={classBack}></div>
+        <div className={classBack}></div>
       </div>
     </StyledCard>
   );
@@ -39,6 +39,7 @@ const StyledCard = styled.div`
     position: relative;
     content: "";
     height: 50rem;
+    cursor: pointer;
   }
   .card__side {
     color: #fff;

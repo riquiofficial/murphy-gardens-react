@@ -3,44 +3,44 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div class="footer">
-      <div class="footer__logo-box">
-        <img src={logo} alt="Full logo" class="footer__logo" />
+    <div className="footer">
+      <div className="footer__logo-box">
+        <img src={logo} alt="Full logo" className="footer__logo" />
       </div>
 
-      <div class="footer__navigation">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <Link to="/" class="footer__link">
+      <div className="footer__navigation">
+        <ul className="footer__list">
+          <li className="footer__item">
+            <Link to="/" className="footer__link">
               Home
             </Link>
           </li>
-          <li class="footer__item">
-            <Link to="/contact" class="footer__link">
+          <li className="footer__item">
+            <Link to="/contact" className="footer__link">
               Contact Us
             </Link>
           </li>
-          <li class="footer__item">
-            <Link to="/gallery" class="footer__link">
+          <li className="footer__item">
+            <Link to="/gallery" className="footer__link">
               Gallery
             </Link>
           </li>
-          <li class="footer__item">
-            <Link to="/pricing" class="footer__link">
+          <li className="footer__item">
+            <Link to="/pricing" className="footer__link">
               Pricing
             </Link>
           </li>
-          <li class="footer__item">
-            <Link to="/about" class="footer__link">
+          <li className="footer__item">
+            <Link to="/about" className="footer__link">
               about
             </Link>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright">
-        <p class="footer__copyright-text">
+      <div className="footer__copyright">
+        <p className="footer__copyright-text">
           Built by{" "}
-          <a href="https://www.rqwebdev.com" class="footer__link">
+          <a href="https://www.rqwebdev.com" className="footer__link">
             RQ Web Development
           </a>{" "}
           for &#169; Murphy Gardens 2020

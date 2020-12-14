@@ -582,6 +582,7 @@ body {
    background-image: linear-gradient(to right, #7ed56f, #01642a); 
     display: inline-block;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent; 
     padding-top:1rem;
   }

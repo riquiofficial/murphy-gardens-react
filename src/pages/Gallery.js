@@ -14,14 +14,14 @@ const Gallery = () => {
   return (
     <div>
       <GalleryBG>
-        <h1 class="main__services-heading-2">Gallery</h1>
+        <h1 className="main__services-heading-2">Gallery</h1>
       </GalleryBG>
 
-      <div class="main__services-text--second-heading margin-bottom-small margin-left-small">
+      <div className="main__services-text--second-heading margin-bottom-small margin-left-small">
         Flip the cards to see the 'after' transformation photos!
       </div>
 
-      <div class="row">
+      <div className="row">
         {elements[0].map((value) => {
           return (
             <div className="col-1-of-3">
@@ -30,7 +30,7 @@ const Gallery = () => {
           );
         })}
       </div>
-      <div class="row">
+      <div className="row">
         {elements[1].map((value) => {
           return (
             <div className="col-1-of-3">
@@ -39,7 +39,7 @@ const Gallery = () => {
           );
         })}
       </div>
-      <div class="row">
+      <div className="row">
         {elements[2].map((value) => {
           return (
             <div className="col-1-of-3">

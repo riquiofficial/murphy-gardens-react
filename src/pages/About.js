@@ -6,18 +6,20 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div class="main">
-      <div class="container">
+    <div className="main">
+      <div className="container">
         <AboutBg>
-          <h1 class="main__services-heading-about">About Murphy Gardens</h1>
-          <div class="row">
-            <div class="story">
-              <figure class="story__shape">
-                <img src={userLogo} alt="user logo" class="story__img" />
-                <figcaption class="story__caption">Clare Mansewood</figcaption>
+          <h1 className="main__services-heading-about">About Murphy Gardens</h1>
+          <div className="row">
+            <div className="story">
+              <figure className="story__shape">
+                <img src={userLogo} alt="user logo" className="story__img" />
+                <figcaption className="story__caption">
+                  Clare Mansewood
+                </figcaption>
               </figure>
-              <div class="story__text">
-                <h3 class="heading-tertiary u-margin-bottom-small text-green">
+              <div className="story__text">
+                <h3 className="heading-tertiary u-margin-bottom-small text-green">
                   "The garden looks great all year round"
                 </h3>
                 <p>
@@ -29,16 +31,16 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="story">
-              <figure class="story__shape">
-                <img src={userLogo} alt="user logo" class="story__img" />
-                <figcaption class="story__caption">
+          <div className="row">
+            <div className="story">
+              <figure className="story__shape">
+                <img src={userLogo} alt="user logo" className="story__img" />
+                <figcaption className="story__caption">
                   Gillian, Barrhead
                 </figcaption>
               </figure>
-              <div class="story__text">
-                <h3 class="heading-tertiary u-margin-bottom-small text-green">
+              <div className="story__text">
+                <h3 className="heading-tertiary u-margin-bottom-small text-green">
                   "I highly recommend Murphy Gardens"
                 </h3>
                 <p>
@@ -50,14 +52,16 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="story">
-              <figure class="story__shape">
-                <img src={userLogo} alt="user logo" class="story__img" />
-                <figcaption class="story__caption">Francine, Mearns</figcaption>
+          <div className="row">
+            <div className="story">
+              <figure className="story__shape">
+                <img src={userLogo} alt="user logo" className="story__img" />
+                <figcaption className="story__caption">
+                  Francine, Mearns
+                </figcaption>
               </figure>
-              <div class="story__text">
-                <h3 class="heading-tertiary u-margin-bottom-small text-green">
+              <div className="story__text">
+                <h3 className="heading-tertiary u-margin-bottom-small text-green">
                   "Turn up every 2 weeks hail, rain or shine"
                 </h3>
                 <p>
@@ -73,19 +77,19 @@ const About = () => {
         </AboutBg>
       </div>
 
-      <div class="row">
-        <div class="main__services">
-          <div class="main__services-text">
-            <h2 class="main__services-text--second-heading">About us</h2>
-            <p class="main__services-paragraph">
+      <div className="row">
+        <div className="main__services">
+          <div className="main__services-text">
+            <h2 className="main__services-text--second-heading">About us</h2>
+            <p className="main__services-paragraph">
               Murphy Gardens are a fully licensed and insured garden maintenance
               company based in Glasgow, Scotland. We have a wealth of experience
               from regular tidy-ups to large scale clearances. We also work with
               both commercial and domestic customers.
             </p>
-            <p class="main__services-paragraph">
+            <p className="main__services-paragraph">
               We are currently running our winter services which can be found{" "}
-              <Link to="/#section-features" class="btn-text">
+              <Link to="/#section-features" className="btn-text">
                 here
               </Link>
             </p>

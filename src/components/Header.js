@@ -12,76 +12,78 @@ const Header = () => {
   const { pathname } = useLocation();
 
   return (
-    <header class="header" id="header">
+    <header className="header" id="header">
       <div className="header__logo-large">
         <Link to="/">
           <img
-            class="header__logo-large--img"
+            className="header__logo-large--img"
             src={logoLarge}
             alt="Murphy Gardens Logo"
           />
         </Link>
       </div>
-      <div class="header__info">
-        <div class="header__hours">
-          <img class="header__icon" src={time} alt="hours" />
-          <p class="header__hours-text">Mon - Sat 9.00 - 18.00</p>
+      <div className="header__info">
+        <div className="header__hours">
+          <img className="header__icon" src={time} alt="hours" />
+          <p className="header__hours-text">Mon - Sat 9.00 - 18.00</p>
         </div>
-        <div class="header__contact">
-          <a class="contact-anchor" href="tel:07470359110">
+        <div className="header__contact">
+          <a className="contact-anchor" href="tel:07470359110">
             <img
-              class="header__icon header__icon-phone"
+              className="header__icon header__icon-phone"
               src={phone}
               alt="contact details"
             />
-            <p class="header__contact-text-phone">(+44) 07470 359110</p>
+            <p className="header__contact-text-phone">(+44) 07470 359110</p>
           </a>
-          <a class="contact-anchor" href="mailto:murphygardens1@gmail.com">
-            <p class="header__contact-text-email">murphygardens1@gmail.com</p>
+          <a className="contact-anchor" href="mailto:murphygardens1@gmail.com">
+            <p className="header__contact-text-email">
+              murphygardens1@gmail.com
+            </p>
           </a>
         </div>
-        <div class=".btn">
-          <Link to="/contact" class="btn">
+        <div className=".btn">
+          <Link to="/contact" className="btn">
             GET A QUOTE
           </Link>
         </div>
       </div>
-      <div class="mobile__nav">
-        <div class="navigation">
+      <div className="mobile__nav">
+        <div className="navigation">
           <input
             type="checkbox"
-            class="navigation__checkbox"
+            className="navigation__checkbox"
             id="navi-toggle"
           />
-          <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
+          <label htmlfor="navi-toggle" className="navigation__button">
+            <span className="navigation__icon">&nbsp;</span>
           </label>
-          <div class="navigation__background">&nbsp;</div>
+          <div className="navigation__background">&nbsp;</div>
 
-          <nav class="navigation__nav">
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a href="/" class="navigation__link">
+          <nav className="navigation__nav">
+            <ul className="navigation__list">
+              <li className="navigation__item">
+                <a href="/" className="navigation__link">
                   Home
                 </a>
               </li>
-              <li class="navigation__item">
-                <a href="/about" class="navigation__link">
+              <li className="navigation__item">
+                <a href="/about" className="navigation__link">
                   About
                 </a>
               </li>
-              <li class="navigation__item">
-                <a href="/pricing" class="navigation__link">
+              <li className="navigation__item">
+                <a href="/pricing" className="navigation__link">
                   Pricing
                 </a>
               </li>
-              <li class="navigation__item">
-                <a href="/gallery" class="navigation__link">
+              <li className="navigation__item">
+                <a href="/gallery" className="navigation__link">
                   Gallery
                 </a>
               </li>
-              <li class="navigation__item">
-                <a href="/contact" class="navigation__link">
+              <li className="navigation__item">
+                <a href="/contact" className="navigation__link">
                   Contact
                 </a>
               </li>
@@ -89,11 +91,11 @@ const Header = () => {
           </nav>
         </div>
       </div>
-      <div class="header__nav">
-        <div class="header__nav-inside">
-          <ul class="header__nav-items">
-            <li class="header__li-nav">
-              <Link to="/" class="header__nav-link">
+      <div className="header__nav">
+        <div className="header__nav-inside">
+          <ul className="header__nav-items">
+            <li className="header__li-nav">
+              <Link to="/" className="header__nav-link">
                 Home
               </Link>
               <Line
@@ -102,8 +104,8 @@ const Header = () => {
                 animate={{ width: pathname === "/" ? "60%" : "0" }}
               />
             </li>
-            <li class="header__li-nav">
-              <Link to="/about" class="header__nav-link">
+            <li className="header__li-nav">
+              <Link to="/about" className="header__nav-link">
                 About
               </Link>
               <Line
@@ -112,8 +114,8 @@ const Header = () => {
                 animate={{ width: pathname === "/about" ? "60%" : "0" }}
               />
             </li>
-            <li class="header__li-nav">
-              <Link to="/gallery" class="header__nav-link">
+            <li className="header__li-nav">
+              <Link to="/gallery" className="header__nav-link">
                 Gallery
               </Link>
               <Line
@@ -122,8 +124,8 @@ const Header = () => {
                 animate={{ width: pathname === "/gallery" ? "60%" : "0" }}
               />
             </li>
-            <li class="header__li-nav">
-              <Link to="pricing" class="header__nav-link">
+            <li className="header__li-nav">
+              <Link to="pricing" className="header__nav-link">
                 Pricing
               </Link>
               <Line
@@ -132,8 +134,8 @@ const Header = () => {
                 animate={{ width: pathname === "/pricing" ? "60%" : "0" }}
               />
             </li>
-            <li class="header__li-nav">
-              <Link to="contact" class="header__nav-link">
+            <li className="header__li-nav">
+              <Link to="contact" className="header__nav-link">
                 Contact
               </Link>
               <Line
@@ -143,15 +145,15 @@ const Header = () => {
               />
             </li>
           </ul>
-          <div class="header__nav-networks">
+          <div className="header__nav-networks">
             <a
-              class="header__nav-networks-link"
+              className="header__nav-networks-link"
               href="https://www.facebook.com/murphygardens1/"
             >
               <img src={facebook} alt="facebook" />
             </a>
           </div>
-          <img class="header__nav-logo" src={logo} alt="logo" />
+          <img className="header__nav-logo" src={logo} alt="logo" />
         </div>
       </div>
     </header>

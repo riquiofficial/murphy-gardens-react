@@ -6,18 +6,18 @@ const Pricing = () => {
   return (
     <main>
       <PricingBg>
-        <h1 class="main__services-heading-2">Pricing</h1>
+        <h1 className="main__services-heading-2">Pricing</h1>
       </PricingBg>
-      <div class="main__services">
-        <div class="main__services-text">
-          <div class="row">
-            <h2 class="main__services-text--second-heading">
+      <div className="main__services">
+        <div className="main__services-text">
+          <div className="row">
+            <h2 className="main__services-text--second-heading">
               Our price varies from job to job
             </h2>
-            <p class="main__services-paragraph">
+            <p className="main__services-paragraph">
               We charge at a very reasonable rate and always deliver any
               services to the highest standard. Please get in contact with us to{" "}
-              <Link to="/contact" class="btn-text">
+              <Link to="/contact" className="btn-text">
                 learn more!
               </Link>
             </p>
