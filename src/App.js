@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Pricing from "./pages/Pricing";
+import Contact from "./pages/Contact";
 //router
 import { Switch, Route, useLocation } from "react-router-dom";
 
@@ -28,6 +29,9 @@ function App() {
         </Route>
         <Route path="/pricing" exact>
           <Pricing />
+        </Route>
+        <Route path="/contact" exact>
+          <Contact />
         </Route>
       </Switch>
       <Footer />
