@@ -116,6 +116,7 @@ body {
         left:40%;
         top:10rem;
     }
+
     .main__services-paragraph {
         margin: 3rem;
     }
@@ -593,22 +594,9 @@ body {
     .composition:hover .composition__photo:not(:hover) {
       transform: scale(0.95); }
 
-.gallery__bg {
-    width: 100%;
-    height: 450px;
-    background-image: linear-gradient(180deg, rgba(2, 90, 0, 0.175) 78.65%, rgba(0, 0, 0, 0.665) 99.99%, rgba(255, 255, 255, 0) 100%), url(/Images/bench-1603432_1920\(1\).jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center top;
-}
-
 .section-about {
     margin: 3rem 0;
 }
-
-
-
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -769,117 +757,6 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity:0;
 }
-
-.card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
-  content: "";
-  height: 50rem;
-  
-  }
-  .card__side {
-    color: #fff;
-    
-    font-size: 2rem;
-    height: 50rem;
-    transition: all .8s ease;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-     }
-    .card__side--front {
-      background-size: cover;
-      background-position: bottom;
-      border: solid lightgray 5px;
-    }
-    .card__side--front-1 {
-        background-image: url(../Images/before1.jpg);
-    }
-    .card__side--front-2 {
-        background-image: url(../Images/before2.jpg);
-    }
-    .card__side--front-3 {
-        background-image: url(../Images/before3.jpg);
-    }
-    .card__side--front-4 {
-        background-image: url(../Images/before4.jpg);
-    }
-    .card__side--front-5 {
-        background-image: url(../Images/before5.jpg);
-    }
-    .card__side--front-6 {
-        background-image: url(../Images/before6.jpg);
-    }
-    .card__side--front-7 {
-        background-image: url(../Images/before7.jpg);
-    }
-    .card__side--front-8 {
-        background-image: url(../Images/before8.jpg);
-    }
-    .card__side--front-9 {
-        background-image: url(../Images/before9.jpg);
-    }
-    .card__side--back {
-      transform: rotateY(180deg);
-      border: solid #176e20 5px;
-       }
-      .card__side--back-1 {
-        background: url(../Images/after1.jpg);
-        background-size: cover;
-        background-position: bottom;
-     }
-     .card__side--back-2 {
-         background: url(../Images/after2.jpg);
-         background-size: cover;
-         background-position: bottom;
-     }
-     .card__side--back-3 {
-        background: url(../Images/after3.jpg);
-       background-size: cover;
-       background-position: bottom;
-    }
-    .card__side--back-4 {
-        background: url(../Images/after4.jpg);
-       background-size: cover;
-       background-position: bottom;
-    }
-    .card__side--back-5 {
-        background: url(../Images/after5.jpg);
-       background-size: cover;
-       background-position: bottom center;
-    }
-    .card__side--back-6 {
-        background: url(../Images/after6.jpg);
-       background-size: cover;
-       background-position: center;
-    }
-    .card__side--back-7 {
-        background: url(../Images/after7.jpg);
-       background-size: cover;
-       background-position: center;
-    }
-    .card__side--back-8 {
-        background: url(../Images/after8.jpg);
-       background-size: cover;
-       background-position: center;
-    }
-    .card__side--back-9 {
-        background: url(../Images/after9.jpg);
-       background-size: cover;
-       background-position: center;
-    }
-
-  .card:hover .card__side--front {
-    transform: translateY(-10px) rotateY(-180deg);
-     }
-  .card:hover .card__side--back {
-   transform: translateY(-30px) rotateY(0);
-     }
 
 .margin-bottom-small {
     margin-bottom: 6rem;

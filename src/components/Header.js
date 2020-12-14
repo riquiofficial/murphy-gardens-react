@@ -59,7 +59,7 @@ const Header = () => {
             <ul class="navigation__list">
               <li class="navigation__item">
                 <Link to="/" class="navigation__link">
-                  home
+                  Home
                 </Link>
               </li>
               <li class="navigation__item">
@@ -69,17 +69,17 @@ const Header = () => {
               </li>
               <li class="navigation__item">
                 <a href="/pricing.html" class="navigation__link">
-                  pricing
+                  Pricing
                 </a>
               </li>
               <li class="navigation__item">
-                <a href="/gallery.html" class="navigation__link">
-                  gallery
-                </a>
+                <Link to="/gallery" class="navigation__link">
+                  Gallery
+                </Link>
               </li>
               <li class="navigation__item">
                 <a href="/contact.html" class="navigation__link">
-                  contact
+                  Contact
                 </a>
               </li>
             </ul>
@@ -100,9 +100,9 @@ const Header = () => {
               </Link>
             </li>
             <li class="header__li-nav">
-              <a href="gallery.html" class="header__nav-link">
+              <Link to="/gallery" class="header__nav-link">
                 Gallery
-              </a>
+              </Link>
             </li>
             <li class="header__li-nav">
               <a href="pricing.html" class="header__nav-link">

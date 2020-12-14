@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 //pages
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Gallery from "./pages/Gallery";
 //router
 import { Switch, Route, useLocation } from "react-router-dom";
 
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/about" exact>
           <About />
+        </Route>
+        <Route path="/gallery" exact>
+          <Gallery />
         </Route>
       </Switch>
       <Footer />

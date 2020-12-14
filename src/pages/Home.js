@@ -61,7 +61,7 @@ const Home = () => {
 
 const MainBg = styled.div`
   width: 100%;
-  height: 450px;
+  height: 70vh;
   background-image: linear-gradient(
       180deg,
       rgba(2, 90, 0, 0.175) 78.65%,
