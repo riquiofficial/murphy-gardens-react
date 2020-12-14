@@ -24,7 +24,7 @@ const Gallery = () => {
       <div className="row">
         {elements[0].map((value) => {
           return (
-            <div className="col-1-of-3">
+            <div className="col-1-of-3" key={value}>
               <Card id={value} />
             </div>
           );
@@ -33,7 +33,7 @@ const Gallery = () => {
       <div className="row">
         {elements[1].map((value) => {
           return (
-            <div className="col-1-of-3">
+            <div className="col-1-of-3" key={value}>
               <Card id={value} />
             </div>
           );
@@ -42,7 +42,7 @@ const Gallery = () => {
       <div className="row">
         {elements[2].map((value) => {
           return (
-            <div className="col-1-of-3">
+            <div className="col-1-of-3" key={value}>
               <Card id={value} />
             </div>
           );

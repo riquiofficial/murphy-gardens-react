@@ -23,7 +23,7 @@ const Contact = () => {
                   name="name"
                   placeholder="Your Name"
                 />
-                <label className="form__label" htmlfor="name">
+                <label className="form__label" htmlFor="name">
                   Your Name &uarr;
                 </label>
               </div>
@@ -35,7 +35,7 @@ const Contact = () => {
                   placeholder="Your Email"
                   required
                 />
-                <label className="form__label" htmlfor="email">
+                <label className="form__label" htmlFor="email">
                   Your Email &uarr;
                 </label>
               </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                 placeholder="Your message"
                 required
               ></textarea>
-              <label className="form__label" htmlfor="message">
+              <label className="form__label" htmlFor="message">
                 Your Message &uarr;
               </label>
               <div data-netlify-recaptcha="true"></div>
