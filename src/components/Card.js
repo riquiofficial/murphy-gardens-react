@@ -42,7 +42,6 @@ const StyledCard = styled.div`
   }
   .card__side {
     color: #fff;
-
     font-size: 2rem;
     height: 50rem;
     transition: all 0.8s ease;

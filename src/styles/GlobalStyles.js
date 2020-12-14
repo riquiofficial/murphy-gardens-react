@@ -489,18 +489,6 @@ body {
     height: 100%
 }
 
-
-
-.price__bg {
-    width: 100%;
-    height: 450px;
-    background-image: linear-gradient(179.99deg, rgba(0, 0, 0, 0.75) 99.97%, rgba(12, 155, 12, 0.15) 99.98%, rgba(17, 87, 17, 0) 99.99%), url(/Images/hedge.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: bottom;
-}
-
 .contact__bg {
     width: 100%;
     height: 600px;
@@ -870,6 +858,7 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    
   .row::after {
     content: "";
     display: table;
@@ -913,6 +902,7 @@ body {
     }
 
   }
+  
 
 `;
 

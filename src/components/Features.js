@@ -4,7 +4,7 @@ import strimmer from "../images/strimmer.jpg";
 
 const Features = () => {
   return (
-    <StyledFeatures>
+    <StyledFeatures id="section-features">
       {/* <a class="contact-anchor" href="contact.html"> */}
       <div class="row">
         <div class="col-1-of-4">
