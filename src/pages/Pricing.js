@@ -1,5 +1,6 @@
 import hedge from "../images/hedge.jpg";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   return (
@@ -16,9 +17,9 @@ const Pricing = () => {
             <p class="main__services-paragraph">
               We charge at a very reasonable rate and always deliver any
               services to the highest standard. Please get in contact with us to{" "}
-              <a href="/contact.html" class="btn-text">
+              <Link to="/contact" class="btn-text">
                 learn more!
-              </a>
+              </Link>
             </p>
           </div>
         </div>

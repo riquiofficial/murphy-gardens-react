@@ -2,6 +2,8 @@ import aboutBg from "../images/about.jpg";
 import userLogo from "../images/iconmonstr-user-5-240.png";
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <div class="main">
@@ -83,9 +85,9 @@ const About = () => {
             </p>
             <p class="main__services-paragraph">
               We are currently running our winter services which can be found{" "}
-              <a href="/index.html#section-features" class="btn-text">
+              <Link to="/#section-features" class="btn-text">
                 here
-              </a>
+              </Link>
             </p>
           </div>
         </div>

@@ -260,7 +260,8 @@ body {
           margin-right: 1.5rem;
           display: inline-block; }
       
-      .navigation__link:hover, .navigation__link:active {
+      
+       .navigation__link:hover, .navigation__link:active {
         background-position: 100%;
         color: #00642b;
         transform: translateX(3rem) scale(1.1);}
@@ -451,23 +452,19 @@ body {
 .header__nav-items {
     /* justify-content: flex-start; */
     font-size: 2.4rem;
+    list-style: none;
+    display: flex;
 }
 
 .header__li-nav {
     list-style:none;
-    display: inline-block;
+    position: relative;
     padding: 0 3rem;
-    transition: all .4s ease;
-}
-
-.header__li-nav:hover {
-    transform: scale(1.1);
 }
 
 .header__nav-link {
     color: #FFFBFB;
     text-decoration: none;
-    transition: all 0.3s ease 0s;
     font-weight: 500;
 }
 
@@ -480,25 +477,10 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-.header__nav-link:hover {
-    color: rgb(49, 80, 51);
-}
-
 .header__nav-logo {
     width: 7rem;
     height: 100%
 }
-
-.contact__bg {
-    width: 100%;
-    height: 600px;
-    background: linear-gradient(179.99deg, rgba(0, 0, 0, 0.75) 99.97%, rgba(0, 0, 0, 0.15) 99.98%, rgba(255, 255, 255, 0) 99.99%), url(/Images/strimmer.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center right;
-}
-
 
 .main__services {
     height: 480px;
@@ -638,6 +620,7 @@ body {
 .btn-text-top:link, .btn-text-top:visited {
     color: #e3f0e8;
     position: absolute;
+    margin-top: 5rem;
     left:5rem;
     
     position:center;

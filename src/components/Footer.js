@@ -16,9 +16,9 @@ const Footer = () => {
             </Link>
           </li>
           <li class="footer__item">
-            <a href="contact.html" class="footer__link">
+            <Link to="/contact" class="footer__link">
               Contact Us
-            </a>
+            </Link>
           </li>
           <li class="footer__item">
             <Link to="/gallery" class="footer__link">

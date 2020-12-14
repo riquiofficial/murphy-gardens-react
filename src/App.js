@@ -13,11 +13,13 @@ import Contact from "./pages/Contact";
 import { Switch, Route, useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="App">
       <GlobalStyles />
       <Header />
-      <Switch location={window.location} key={window.location.pathname}>
+      <Switch location={location} key={location.pathname}>
         <Route path="/" exact>
           <Home />
         </Route>

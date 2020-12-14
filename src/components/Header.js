@@ -5,9 +5,12 @@ import facebook from "../images/iconmonstr-facebook-6.svg";
 import logo from "../images/logo.png";
 //router
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+import styled from "styled-components";
 
 const Header = () => {
-  const { pathName } = useLocation();
+  const { pathname } = useLocation();
+
   return (
     <header class="header" id="header">
       <div className="header__logo-large">
@@ -38,9 +41,9 @@ const Header = () => {
           </a>
         </div>
         <div class=".btn">
-          <a href="contact.html" class="btn">
+          <Link to="/contact" class="btn">
             GET A QUOTE
-          </a>
+          </Link>
         </div>
       </div>
       <div class="mobile__nav">
@@ -58,27 +61,27 @@ const Header = () => {
           <nav class="navigation__nav">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <Link to="/" class="navigation__link">
+                <a href="/" class="navigation__link">
                   Home
-                </Link>
+                </a>
               </li>
               <li class="navigation__item">
-                <Link to="/about" class="navigation__link">
+                <a href="/about" class="navigation__link">
                   About
-                </Link>
+                </a>
               </li>
               <li class="navigation__item">
-                <Link to="/pricing" class="navigation__link">
+                <a href="/pricing" class="navigation__link">
                   Pricing
-                </Link>
+                </a>
               </li>
               <li class="navigation__item">
-                <Link to="/gallery" class="navigation__link">
+                <a href="/gallery" class="navigation__link">
                   Gallery
-                </Link>
+                </a>
               </li>
               <li class="navigation__item">
-                <a href="/contact.html" class="navigation__link">
+                <a href="/contact" class="navigation__link">
                   Contact
                 </a>
               </li>
@@ -93,26 +96,51 @@ const Header = () => {
               <Link to="/" class="header__nav-link">
                 Home
               </Link>
+              <Line
+                transition={{ duration: 0.75 }}
+                initial={{ width: "0" }}
+                animate={{ width: pathname === "/" ? "60%" : "0" }}
+              />
             </li>
             <li class="header__li-nav">
               <Link to="/about" class="header__nav-link">
                 About
               </Link>
+              <Line
+                transition={{ duration: 0.75 }}
+                initial={{ width: "0" }}
+                animate={{ width: pathname === "/about" ? "60%" : "0" }}
+              />
             </li>
             <li class="header__li-nav">
               <Link to="/gallery" class="header__nav-link">
                 Gallery
               </Link>
+              <Line
+                transition={{ duration: 0.75 }}
+                initial={{ width: "0" }}
+                animate={{ width: pathname === "/gallery" ? "60%" : "0" }}
+              />
             </li>
             <li class="header__li-nav">
               <Link to="pricing" class="header__nav-link">
                 Pricing
               </Link>
+              <Line
+                transition={{ duration: 0.75 }}
+                initial={{ width: "0" }}
+                animate={{ width: pathname === "/pricing" ? "60%" : "0" }}
+              />
             </li>
             <li class="header__li-nav">
-              <a href="contact.html" class="header__nav-link">
+              <Link to="contact" class="header__nav-link">
                 Contact
-              </a>
+              </Link>
+              <Line
+                transition={{ duration: 0.75 }}
+                initial={{ width: "0" }}
+                animate={{ width: pathname === "/contact" ? "60%" : "0" }}
+              />
             </li>
           </ul>
           <div class="header__nav-networks">
@@ -129,5 +157,15 @@ const Header = () => {
     </header>
   );
 };
+
+const Line = styled(motion.div)`
+  height: 0.3rem;
+  background: #2d652c;
+  width: 0%;
+  position: absolute;
+  bottom: -60%;
+  left: 20%;
+  z-index: 2000;
+`;
 
 export default Header;
