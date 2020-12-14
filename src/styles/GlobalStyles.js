@@ -877,13 +877,15 @@ body {
     .row .col-1-of-4 {
       width:100%;
       padding:0 25% 2rem 25%;
-      
     }
 
     .row .col-1-of-3 {
       width:100%;
-      padding:0 25% 2rem 25%;
+      padding:0 10% 5rem 10%;
     }
+
+    .row:not(:last-child) {
+    margin-bottom: 0rem; }
 
   }
   
