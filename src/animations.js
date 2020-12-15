@@ -10,6 +10,7 @@ export const pageAnimation = {
       duration: 0.5,
       when: "beforeChildren",
       staggerChildren: 0.25,
+      ease: "easeInOut",
     },
   },
   exit: {

@@ -10,7 +10,6 @@ import styled from "styled-components";
 
 const Header = () => {
   const { pathname } = useLocation();
-
   return (
     <header className="header" id="header">
       <div className="header__logo-large">
@@ -63,29 +62,59 @@ const Header = () => {
           <nav className="navigation__nav">
             <ul className="navigation__list">
               <li className="navigation__item">
-                <a href="/" className="navigation__link">
+                <Link
+                  to="/"
+                  className="navigation__link"
+                  onClick={() => {
+                    document.getElementById("navi-toggle").checked = false;
+                  }}
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="navigation__item">
-                <a href="/about" className="navigation__link">
+                <Link
+                  to="/about"
+                  className="navigation__link"
+                  onClick={() => {
+                    document.getElementById("navi-toggle").checked = false;
+                  }}
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li className="navigation__item">
-                <a href="/pricing" className="navigation__link">
+                <Link
+                  to="/pricing"
+                  className="navigation__link"
+                  onClick={() => {
+                    document.getElementById("navi-toggle").checked = false;
+                  }}
+                >
                   Pricing
-                </a>
+                </Link>
               </li>
               <li className="navigation__item">
-                <a href="/gallery" className="navigation__link">
+                <Link
+                  to="/gallery"
+                  className="navigation__link"
+                  onClick={() => {
+                    document.getElementById("navi-toggle").checked = false;
+                  }}
+                >
                   Gallery
-                </a>
+                </Link>
               </li>
               <li className="navigation__item">
-                <a href="/contact" className="navigation__link">
+                <Link
+                  to="/contact"
+                  className="navigation__link"
+                  onClick={() => {
+                    document.getElementById("navi-toggle").checked = false;
+                  }}
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

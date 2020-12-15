@@ -37,35 +37,6 @@ html {
 
 }
 
-
-.page_load {
-    animation: change-page 1s cubic-bezier(0.86, 0, 0.07, 1);
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    position: fixed;
-    top: -20rem;
-    right: 2.5rem;
-    background-image: radial-gradient(#2f9f36, #00642b);
-    z-index: 1000;
-    animation: page-load 1.2s cubic-bezier(0.86, 0, 0.07, 1);
-    /* transition: 1s cubic-bezier(0.86, 0, 0.07, 1); */
-     }
-
-    @keyframes page-load {
-        0% {transform: scale(80);
-            opacity: 1;}
-        100% {transform: scale(0);
-            opacity: 0;}
-    }
-
-    @keyframes change-page {
-        0% {transform: scale(0);
-            opacity: 1;}
-        100% {transform: scale(100);
-            opacity: 0;}    
-    }
-
 body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
