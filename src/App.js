@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
+import Thanks from "./pages/Thanks";
 //router
 import { Switch, Route, useLocation } from "react-router-dom";
 
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route path="/contact" exact>
             <Contact />
+          </Route>
+          <Route path="/thanks" exact>
+            <Thanks />
           </Route>
         </Switch>
       </AnimatePresence>

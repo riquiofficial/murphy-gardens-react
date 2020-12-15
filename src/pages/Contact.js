@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="contact-form">
           <div className="contact">
             <form
-              action="/thanks.html"
+              action="/thanks"
               className="contact__form"
               name="contact"
               method="POST"
