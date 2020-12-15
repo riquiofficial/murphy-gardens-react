@@ -14,11 +14,18 @@ const Contact = () => {
         animate="show"
       >
         <div className="contact-form">
+          <div className="dummy">
+            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+              <input type="text" name="name" />
+              <input type="email" name="email" />
+              <textarea name="message"></textarea>
+            </form>
+          </div>
           <div className="contact">
             <form
               action="/thanks"
               className="contact__form"
-              name="contact"
+              name="contact-form"
               method="POST"
               data-netlify="true"
               data-netlify-recaptcha="true"

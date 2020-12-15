@@ -496,7 +496,6 @@ body {
 }
 
 .main__services-text--second-heading {
-    font-weight: 500;
     font-size: 4rem;
     line-height: 4.8rem;
     padding-top: 5rem;
