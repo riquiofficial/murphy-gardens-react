@@ -38,9 +38,7 @@ const Contact = () => {
                   name="name"
                   placeholder="Your Name"
                 />
-                <label className="form__label" htmlFor="name">
-                  Your Name &uarr;
-                </label>
+                <label className="form__label">Your Name &uarr;</label>
               </div>
               <div className="form__group">
                 <input
@@ -50,9 +48,7 @@ const Contact = () => {
                   placeholder="Your Email"
                   required
                 />
-                <label className="form__label" htmlFor="email">
-                  Your Email &uarr;
-                </label>
+                <label className="form__label">Your Email &uarr;</label>
               </div>
               <textarea
                 className="form__input"
@@ -60,9 +56,7 @@ const Contact = () => {
                 placeholder="Your message"
                 required
               ></textarea>
-              <label className="form__label" htmlFor="message">
-                Your Message &uarr;
-              </label>
+              <label className="form__label">Your Message &uarr;</label>
               <div data-netlify-recaptcha="true"></div>
               <button type="submit" className="btn--send">
                 Send
