@@ -108,8 +108,18 @@ body {
 }
 
 .contact-anchor {
-    text-decoration: none !important;
-    color: inherit;
+  text-decoration: none !important;
+  color: black;
+}
+
+.contact-anchor2 {
+  text-decoration: none !important;
+  color: #00642b;
+  transition: all .2s ease;
+}
+
+.contact-anchor2:hover {
+  color: #2f9f36;
 }
 
 .header__contact-text-email {
