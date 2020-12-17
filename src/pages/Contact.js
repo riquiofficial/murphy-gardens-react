@@ -12,7 +12,60 @@ const Contact = () => {
         variants={pageAnimation}
         initial="hidden"
         animate="show"
-      ></ContactBg>
+      >
+        <div class="contact-form">
+          <div class="contact">
+            <form
+              class="contact__form"
+              name="contact"
+              data-netlify-recaptcha="true"
+              method="post"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <div class="form__group">
+                <input
+                  class="form__input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                />
+                <label class="form__label" htmlfor="name">
+                  Your Name &uarr;
+                </label>
+              </div>
+
+              <div class="form__group">
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <label class="form__label" htmlfor="email">
+                  Your Email &uarr;
+                </label>
+              </div>
+              <br />
+              <textarea
+                class="form__input"
+                name="message"
+                placeholder="Your message"
+                required
+              ></textarea>
+              <label class="form__label" htmlfor="message">
+                Your Message &uarr;
+              </label>
+
+              <div data-netlify-recaptcha="true"></div>
+              <button type="submit" class="btn--send">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </ContactBg>
       <section className="contact__us">
         <div className="main__services">
           <div className="row">
