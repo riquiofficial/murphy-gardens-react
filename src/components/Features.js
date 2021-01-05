@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //images
-import strimmer from "../images/strimmer.jpg";
+import strimmer from "../images/strimmer.webp";
 
 const Features = () => {
   return (

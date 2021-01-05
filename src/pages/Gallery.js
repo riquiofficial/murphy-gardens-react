@@ -1,6 +1,6 @@
 import styled from "styled-components";
 //images
-import bench from "../images/bench.jpg";
+import bench from "../images/bench.webp";
 //components
 import Card from "../components/Card";
 import ScrollTop from "../components/ScrollTop";

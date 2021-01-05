@@ -1,4 +1,4 @@
-import strimmer from "../images/strimmer.jpg";
+import strimmer from "../images/strimmer.webp";
 import styled from "styled-components";
 import ScrollTop from "../components/ScrollTop";
 import { motion } from "framer-motion";

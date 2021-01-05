@@ -1,4 +1,4 @@
-import hedge from "../images/hedge.jpg";
+import hedge from "../images/hedge.webp";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import ScrollTop from "../components/ScrollTop";

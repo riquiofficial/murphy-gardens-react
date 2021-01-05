@@ -1,4 +1,4 @@
-import aboutBg from "../images/about.jpg";
+import aboutBg from "../images/about.webp";
 import userLogo from "../images/iconmonstr-user-5-240.png";
 import styled from "styled-components";
 import ScrollTop from "../components/ScrollTop";

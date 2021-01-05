@@ -1,23 +1,23 @@
 import styled from "styled-components";
 //images
-import before1 from "../images/before1.jpg";
-import before2 from "../images/before2.jpg";
-import before3 from "../images/before3.jpg";
-import before4 from "../images/before4.jpg";
-import before5 from "../images/before5.jpg";
-import before6 from "../images/before6.jpg";
-import before7 from "../images/before7.jpg";
-import before8 from "../images/before8.jpg";
-import before9 from "../images/before9.jpg";
-import after1 from "../images/after1.jpg";
-import after2 from "../images/after2.jpg";
-import after3 from "../images/after3.jpg";
-import after4 from "../images/after4.jpg";
-import after5 from "../images/after5.jpg";
-import after6 from "../images/after6.jpg";
-import after7 from "../images/after7.jpg";
-import after8 from "../images/after8.jpg";
-import after9 from "../images/after9.jpg";
+import before1 from "../images/before1.webp";
+import before2 from "../images/before2.webp";
+import before3 from "../images/before3.webp";
+import before4 from "../images/before4.webp";
+import before5 from "../images/before5.webp";
+import before6 from "../images/before6.webp";
+import before7 from "../images/before7.webp";
+import before8 from "../images/before8.webp";
+import before9 from "../images/before9.webp";
+import after1 from "../images/after1.webp";
+import after2 from "../images/after2.webp";
+import after3 from "../images/after3.webp";
+import after4 from "../images/after4.webp";
+import after5 from "../images/after5.webp";
+import after6 from "../images/after6.webp";
+import after7 from "../images/after7.webp";
+import after8 from "../images/after8.webp";
+import after9 from "../images/after9.webp";
 
 const Card = (id) => {
   const classFront = `card__side card__side--front card__side--front-${id.id}`;
