@@ -21,6 +21,12 @@ react-router/react-router-dom 5.2.0
 styled-components 5.2.1
 framer-motion 2.9.5
 
+# Launch
+
+The website can be viewed at: https://www.murphygardens.co.uk/
+
+Alternatively, you can clone and run this Github repo using the below commands:
+
 ## Available Script Commands
 
 In the project directory, you can run:
