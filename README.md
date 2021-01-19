@@ -6,11 +6,20 @@
 
 The aim of this build was to create a modern, attractive, responsive static site for a local business, to improve its client base and make communication easier through a contact form.
 
+Working on this project helped to solidify my understanding of concisely written BEM CSS, component libraries in React and gain experience of designing a website from scratch, then face the challenges of coding it out within a modern JS Library
+
 ## Technologies
 
-This project utilises ReactJS to build a web app for a local business. It is a static site with added page animations and uses React-Router to switch pages.
+This project utilises ReactJS to build a web app for a local business. It is a static site with added page animations and uses React-Router to switch pages. Page animations were incorporated using Framer-Motion.
 
 The CSS was typed using BEM methodology and the app is split into multiple pages and components for improved organisation and scalability.
+
+#### Versions used:
+
+React 17.0.1
+react-router/react-router-dom 5.2.0
+styled-components 5.2.1
+framer-motion 2.9.5
 
 ## Available Script Commands
 
