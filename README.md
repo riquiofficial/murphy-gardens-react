@@ -16,10 +16,10 @@ The CSS was typed using BEM methodology and the app is split into multiple pages
 
 #### Versions used:
 
-React 17.0.1
-react-router/react-router-dom 5.2.0
-styled-components 5.2.1
-framer-motion 2.9.5
+React 17.0.1 <br>
+react-router/react-router-dom 5.2.0 <br>
+styled-components 5.2.1 <br>
+framer-motion 2.9.5 <br>
 
 # Launch
 
