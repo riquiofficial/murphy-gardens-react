@@ -13,53 +13,64 @@ const Contact = () => {
         initial="hidden"
         animate="show"
       >
-        <div class="contact-form">
-          <div class="contact">
+        <div className="contact-form">
+          <div className="contact">
             <form
-              class="contact__form"
+              className="contact__form"
               name="contact"
               data-netlify-recaptcha="true"
               method="post"
             >
               <input type="hidden" name="form-name" value="contact" />
-              <div class="form__group">
+              <div className="form__group">
                 <input
-                  class="form__input"
+                  className="form__input"
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Your Name"
                 />
-                <label class="form__label" htmlfor="name">
+                <label className="form__label" htmlFor="name">
                   Your Name &uarr;
                 </label>
               </div>
 
-              <div class="form__group">
+              <div className="form__group">
                 <input
-                  class="form__input"
+                  className="form__input"
                   type="email"
                   name="email"
                   placeholder="Your Email"
-                  required
                 />
-                <label class="form__label" htmlfor="email">
+                <label className="form__label" htmlFor="email">
                   Your Email &uarr;
+                </label>
+              </div>
+              <div className="form__group">
+                <input
+                  className="form__input"
+                  type="tel"
+                  name="number"
+                  placeholder="Your Phone Number"
+                  pattern="[0-9]{11}"
+                />
+                <label className="form__label" htmlFor="number">
+                  Your Phone Number &uarr;
                 </label>
               </div>
               <br />
               <textarea
-                class="form__input"
+                className="form__input"
                 name="message"
                 placeholder="Your message"
                 required
               ></textarea>
-              <label class="form__label" htmlfor="message">
+              <label className="form__label" htmlFor="message">
                 Your Message &uarr;
               </label>
 
               <div data-netlify-recaptcha="true"></div>
-              <button type="submit" class="btn--send">
+              <button type="submit" className="btn--send">
                 Send
               </button>
             </form>
@@ -101,7 +112,7 @@ const Contact = () => {
 
 const ContactBg = styled(motion.div)`
   width: 100%;
-  height: 450px;
+  height: 600px;
   background: linear-gradient(
       179.99deg,
       rgba(0, 0, 0, 0.75) 99.97%,
