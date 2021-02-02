@@ -69,7 +69,7 @@ const Home = () => {
   );
 };
 
-const MainBg = styled.div`
+const MainBg = styled(motion.div)`
   width: 100%;
   height: 70vh;
   background-image: linear-gradient(

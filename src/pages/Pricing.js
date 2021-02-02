@@ -38,7 +38,7 @@ const Pricing = () => {
   );
 };
 
-const PricingBg = styled.div`
+const PricingBg = styled(motion.div)`
   width: 100%;
   height: 450px;
   background-image: linear-gradient(

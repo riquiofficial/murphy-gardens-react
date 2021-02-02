@@ -61,7 +61,7 @@ const Gallery = () => {
   );
 };
 
-const GalleryBG = styled.div`
+const GalleryBG = styled(motion.div)`
   width: 100%;
   height: 450px;
   background-image: linear-gradient(

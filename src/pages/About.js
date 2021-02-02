@@ -108,7 +108,7 @@ const About = () => {
   );
 };
 
-const AboutBg = styled.div`
+const AboutBg = styled(motion.div)`
   width: 100%;
   height: 140rem;
   background-image: linear-gradient(
