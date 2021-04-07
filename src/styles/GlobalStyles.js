@@ -295,7 +295,7 @@ body {
         font-size: 20px;
         height: 54px;
         line-height: 4.4rem;
-        padding: 15px 10px 10px 23px;
+        padding: 15px 23px;
         margin-right:10px;
         right:0;
         top: 80px;
@@ -311,7 +311,7 @@ body {
         background: #2F9F36;
         text-decoration: none;
         color: white;
-        padding: 5px 0 0 35px;
+        padding: 5px 35px;
         border-radius: 5rem;
         font-weight: 700;
         width: 120px;
