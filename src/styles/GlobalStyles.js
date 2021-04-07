@@ -629,6 +629,7 @@ body {
   
 .contact__form {
     margin-top: 80px;
+    width: 70%;
     color: rgb(238, 234, 234);
     position:absolute;
     left:50%;
@@ -656,7 +657,7 @@ body {
     background-color: rgba(104, 103, 103, 0.5);
     border: none;
     border-bottom: 3px solid transparent;
-    width: 90%;
+    width: 100%;
     display: block;
     transition: all .3s; }
     .form__input:focus {
@@ -684,7 +685,7 @@ body {
     box-shadow: 0 .5rem 1rem rgba(238, 234, 234, 0.2);
     margin-top:1rem;
     padding: 1.5rem 4rem;
-    transition: all .2s;
+   transition: all .2s;
 }
 
 .btn--send:hover {
@@ -873,6 +874,19 @@ body {
     margin-bottom: 0rem; }
 
   }
+@media only screen and (max-width: 320px) {
+  .header__hours {
+    display: none;
+}
+.header__contact {
+  display: none;
+}
+.story {
+  width: 80%;
+  padding: 4rem;
+}
+
+}
   
 
 `;
