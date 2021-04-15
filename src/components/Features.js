@@ -16,7 +16,7 @@ const Features = () => {
                 Clearances/Cutbacks
               </h3>
               <p className="feature-box__text">
-                Removal of overgrown vegetation
+                Removal of overgrown vegetation, we cut to the highest quality
               </p>
             </div>
           </div>

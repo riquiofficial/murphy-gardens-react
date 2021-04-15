@@ -95,7 +95,7 @@ const About = () => {
               both commercial and domestic customers.
             </p>
             <p className="main__services-paragraph">
-              We are currently running our winter services which can be found{" "}
+              Our current services can be found{" "}
               <a href="/#section-features" className="btn-text">
                 here
               </a>
