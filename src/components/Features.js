@@ -13,7 +13,7 @@ const Features = () => {
               <i className="feature-box__icon im im-leaf"></i>
 
               <h3 className="heading-tertiary u-margin-bottom-small">
-                Final Clearances/Cutbacks
+                Clearances/Cutbacks
               </h3>
               <p className="feature-box__text">
                 Removal of overgrown vegetation

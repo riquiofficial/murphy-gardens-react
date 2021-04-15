@@ -33,8 +33,8 @@ const Home = () => {
                 Murphy Gardens provide a range of gardening services from
                 regular commercial maintenance visits to small landscaping jobs.
                 Every job is performed to the highest quality and very
-                reasonably priced. We work tirelessly throughout the winter. See
-                our current winter services{" "}
+                reasonably priced. We work tirelessly throughout the year. See
+                our current services{" "}
                 <a href="#section-features" className="btn-text">
                   below &#8595;
                 </a>
