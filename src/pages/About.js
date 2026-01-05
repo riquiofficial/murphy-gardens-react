@@ -82,19 +82,21 @@ const About = () => {
   );
 };
 
-const AboutBg = styled(motion.div)`
+const AboutBg = styled.div`
   width: 100%;
   min-height: 100vh;
   padding: 8rem 0;
   background-image: linear-gradient(179.99deg, rgba(0, 0, 0, 0.75) 99.97%, rgba(12, 155, 12, 0.15) 99.98%, rgba(17, 87, 17, 0) 99.99%), url(${aboutBg});
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center top;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 6rem;
+  position: relative;
+  z-index: 0;
   @media only screen and (max-width: 452px) {
     padding: 6rem 0;
     gap: 4rem;

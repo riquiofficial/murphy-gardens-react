@@ -74,20 +74,20 @@ const Contact = () => {
   );
 };
 
-const ContactBg = styled(motion.div)`
+const ContactBg = styled.div`
   width: 100%;
   height: 600px;
   position: relative;
   background: linear-gradient(179.99deg, rgba(0, 0, 0, 0.75) 99.97%, rgba(0, 0, 0, 0.15) 99.98%, rgba(255, 255, 255, 0) 99.99%), url(${strimmer});
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center right;
+  z-index: 0;
 
   @media only screen and (max-width: 768px) {
     min-height: 700px;
     height: auto;
-    background-attachment: scroll;
     padding-bottom: 2rem;
   }
 

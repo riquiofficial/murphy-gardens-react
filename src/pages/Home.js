@@ -20,7 +20,7 @@ const Home = () => {
       initial="hidden"
       animate="show"
     >
-      <section className="main">
+      <section className="main" style={{ position: 'relative', zIndex: 1 }}>
         <MainBg />
         <div className="section-about">
           <h1 className="main__services-heading">Welcome to Murphy Gardens</h1>
@@ -69,9 +69,10 @@ const Home = () => {
   );
 };
 
-const MainBg = styled(motion.div)`
+const MainBg = styled.div`
   width: 100%;
   height: 70vh;
+  position: relative;
   background-image: linear-gradient(
       180deg,
       rgba(2, 90, 0, 0.175) 78.65%,
@@ -80,9 +81,10 @@ const MainBg = styled(motion.div)`
     ),
     url(${background});
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: bottom;
+  z-index: 0;
 `;
 
 export default Home;

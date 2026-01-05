@@ -58,14 +58,16 @@ const Gallery = () => {
   );
 };
 
-const GalleryBG = styled(motion.div)`
+const GalleryBG = styled.div`
   width: 100%;
   height: 450px;
+  position: relative;
   background-image: linear-gradient(180deg, rgba(2, 90, 0, 0.175) 78.65%, rgba(0, 0, 0, 0.665) 99.99%, rgba(255, 255, 255, 0) 100%), url(${bench});
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center top;
+  z-index: 0;
 `;
 
 export default Gallery;
