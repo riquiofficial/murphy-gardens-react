@@ -41,7 +41,7 @@ const Header = () => {
             </p>
           </a>
         </div>
-        <div className=".btn">
+        <div>
           <Link to="/contact" className="btn">
             GET A QUOTE
           </Link>
@@ -154,7 +154,7 @@ const Header = () => {
               />
             </li>
             <li className="header__li-nav">
-              <Link to="pricing" className="header__nav-link">
+              <Link to="/pricing" className="header__nav-link">
                 Pricing
               </Link>
               <Line
@@ -164,7 +164,7 @@ const Header = () => {
               />
             </li>
             <li className="header__li-nav">
-              <Link to="contact" className="header__nav-link">
+              <Link to="/contact" className="header__nav-link">
                 Contact
               </Link>
               <Line
