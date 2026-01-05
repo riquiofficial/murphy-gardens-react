@@ -32,7 +32,7 @@ const Footer = () => {
           </li>
           <li className="footer__item">
             <Link to="/about" className="footer__link">
-              about
+              About
             </Link>
           </li>
         </ul>

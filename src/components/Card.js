@@ -25,8 +25,12 @@ const Card = (id) => {
   return (
     <StyledCard>
       <div className="card">
-        <div className={classFront}></div>
-        <div className={classBack}></div>
+        <div className={classFront}>
+          <div className="card__label card__label--before">Before</div>
+        </div>
+        <div className={classBack}>
+          <div className="card__label card__label--after">After</div>
+        </div>
       </div>
     </StyledCard>
   );
@@ -40,7 +44,13 @@ const StyledCard = styled.div`
     content: "";
     height: 50rem;
     cursor: pointer;
+    transition: transform 0.3s ease;
   }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
   .card__side {
     color: #fff;
     font-size: 2rem;
@@ -53,7 +63,35 @@ const StyledCard = styled.div`
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
   }
+  
+  .card__label {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: rgba(23, 110, 32, 0.9);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__label--after {
+    background-color: rgba(47, 159, 54, 0.9);
+  }
+  
+  .card:hover .card__label {
+    transform: scale(1.05);
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.3);
+  }
+  
   .card__side--front {
     background-size: cover;
     background-position: bottom;
@@ -138,9 +176,37 @@ const StyledCard = styled.div`
 
   .card:hover .card__side--front {
     transform: translateY(-10px) rotateY(-180deg);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
   }
   .card:hover .card__side--back {
     transform: translateY(-30px) rotateY(0);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
+  }
+  
+  @media only screen and (max-width: 702px) {
+    .card {
+      height: 45rem;
+    }
+    
+    .card__side {
+      height: 45rem;
+    }
+    
+    .card__label {
+      font-size: 1.2rem;
+      padding: 0.6rem 1.2rem;
+      top: 1.5rem;
+      right: 1.5rem;
+    }
+  }
+  
+  @media (hover: none) {
+    .card:active .card__side--front {
+      transform: translateY(-10px) rotateY(-180deg);
+    }
+    .card:active .card__side--back {
+      transform: translateY(-30px) rotateY(0);
+    }
   }
 `;
 

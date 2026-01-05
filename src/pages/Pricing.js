@@ -19,7 +19,7 @@ const Pricing = () => {
       </PricingBg>
       <div className="main__services">
         <div className="main__services-text">
-          <div className="row">
+          <div className="row" style={{ paddingTop: '2rem' }}>
             <h2 className="main__services-text--second-heading">
               Our price varies from job to job
             </h2>
