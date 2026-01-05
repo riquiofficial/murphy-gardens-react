@@ -32,7 +32,7 @@ const Footer = () => {
           </li>
           <li className="footer__item">
             <Link to="/about" className="footer__link">
-              about
+              About
             </Link>
           </li>
         </ul>
@@ -43,7 +43,7 @@ const Footer = () => {
           <a href="https://www.rqwebdev.com" className="footer__link">
             RQ Web Development
           </a>{" "}
-          for &#169; Murphy Gardens 2021
+          for &#169; Murphy Gardens {new Date().getFullYear()}
         </p>
       </div>
     </div>

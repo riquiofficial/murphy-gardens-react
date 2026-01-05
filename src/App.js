@@ -11,34 +11,29 @@ import Gallery from "./pages/Gallery";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 //router
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+
+function AnimatedRoutes() {
+  const location = useLocation();
+  return (
+    <AnimatePresence mode="wait" initial={false}>
+      <Routes location={location} key={location.pathname}>
+        <Route index path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </AnimatePresence>
+  );
+}
 
 function App() {
-  const location = useLocation();
-
   return (
     <div className="App">
       <GlobalStyles />
       <Header />
-      <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/about" exact>
-            <About />
-          </Route>
-          <Route path="/gallery" exact>
-            <Gallery />
-          </Route>
-          <Route path="/pricing" exact>
-            <Pricing />
-          </Route>
-          <Route path="/contact" exact>
-            <Contact />
-          </Route>
-        </Switch>
-      </AnimatePresence>
+      <AnimatedRoutes />
       <Footer />
     </div>
   );

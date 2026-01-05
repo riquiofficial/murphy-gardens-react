@@ -41,7 +41,7 @@ const Header = () => {
             </p>
           </a>
         </div>
-        <div className=".btn">
+        <div>
           <Link to="/contact" className="btn">
             GET A QUOTE
           </Link>
@@ -124,7 +124,7 @@ const Header = () => {
         <div className="header__nav-inside">
           <ul className="header__nav-items">
             <li className="header__li-nav">
-              <Link to="/" className="header__nav-link">
+              <Link to="/" className={`header__nav-link ${pathname === "/" ? "header__nav-link--active" : ""}`}>
                 Home
               </Link>
               <Line
@@ -134,7 +134,7 @@ const Header = () => {
               />
             </li>
             <li className="header__li-nav">
-              <Link to="/about" className="header__nav-link">
+              <Link to="/about" className={`header__nav-link ${pathname === "/about" ? "header__nav-link--active" : ""}`}>
                 About
               </Link>
               <Line
@@ -144,7 +144,7 @@ const Header = () => {
               />
             </li>
             <li className="header__li-nav">
-              <Link to="/gallery" className="header__nav-link">
+              <Link to="/gallery" className={`header__nav-link ${pathname === "/gallery" ? "header__nav-link--active" : ""}`}>
                 Gallery
               </Link>
               <Line
@@ -154,7 +154,7 @@ const Header = () => {
               />
             </li>
             <li className="header__li-nav">
-              <Link to="pricing" className="header__nav-link">
+              <Link to="/pricing" className={`header__nav-link ${pathname === "/pricing" ? "header__nav-link--active" : ""}`}>
                 Pricing
               </Link>
               <Line
@@ -164,7 +164,7 @@ const Header = () => {
               />
             </li>
             <li className="header__li-nav">
-              <Link to="contact" className="header__nav-link">
+              <Link to="/contact" className={`header__nav-link ${pathname === "/contact" ? "header__nav-link--active" : ""}`}>
                 Contact
               </Link>
               <Line
@@ -190,13 +190,15 @@ const Header = () => {
 };
 
 const Line = styled(motion.div)`
-  height: 0.3rem;
+  height: 0.4rem;
   background: #2d652c;
   width: 0%;
   position: absolute;
   bottom: -80%;
   left: 20%;
   z-index: 2000;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(45, 101, 44, 0.3);
 `;
 
 export default Header;

@@ -19,7 +19,7 @@ const Pricing = () => {
       </PricingBg>
       <div className="main__services">
         <div className="main__services-text">
-          <div className="row">
+          <div className="row" style={{ paddingTop: '2rem' }}>
             <h2 className="main__services-text--second-heading">
               Our price varies from job to job
             </h2>
@@ -38,9 +38,10 @@ const Pricing = () => {
   );
 };
 
-const PricingBg = styled(motion.div)`
+const PricingBg = styled.div`
   width: 100%;
   height: 450px;
+  position: relative;
   background-image: linear-gradient(
       179.99deg,
       rgba(0, 0, 0, 0.75) 99.97%,
@@ -49,9 +50,10 @@ const PricingBg = styled(motion.div)`
     ),
     url(${hedge});
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: bottom;
+  z-index: 0;
 `;
 
 export default Pricing;

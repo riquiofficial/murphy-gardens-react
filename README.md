@@ -33,6 +33,8 @@ Alternatively, you can clone and run this Github repo using the below commands i
 
 In the project directory, you can run:
 
+### `npm install`
+
 ### `npm start`
 
 Runs the app in the development mode.\
