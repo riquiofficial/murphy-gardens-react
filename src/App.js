@@ -11,13 +11,14 @@ import Gallery from "./pages/Gallery";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 //router
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 function AnimatedRoutes() {
+  const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
-      <Routes>
-        <Route path="/" element={<Home />} />
+    <AnimatePresence mode="wait" initial={false}>
+      <Routes location={location} key={location.pathname}>
+        <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/pricing" element={<Pricing />} />

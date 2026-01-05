@@ -6,20 +6,23 @@ import { pageAnimation } from "../animations";
 
 const Contact = () => {
   return (
-    <>
-      <ContactBg
-        exit="exit"
-        variants={pageAnimation}
-        initial="hidden"
-        animate="show"
-      >
+    <motion.div
+      className="main"
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
+      <ContactBg>
         <div className="contact-form">
           <div className="contact">
             <form
               className="contact__form"
               name="contact"
+              data-netlify="true"
               data-netlify-recaptcha="true"
               method="post"
+              action="/"
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form__group">
@@ -106,7 +109,7 @@ const Contact = () => {
         </div>
         <ScrollTop />
       </section>
-    </>
+    </motion.div>
   );
 };
 
