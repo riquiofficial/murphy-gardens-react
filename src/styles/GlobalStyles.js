@@ -45,8 +45,18 @@ body {
     line-height: 1.7rem;
     color: rgb(3, 3, 3);
     background-color: #fdfcfc;
-    
+
  }
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
 
 .header {
     width:100%;

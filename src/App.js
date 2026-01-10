@@ -33,7 +33,9 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <Header />
-      <AnimatedRoutes />
+      <main className="main-content">
+        <AnimatedRoutes />
+      </main>
       <Footer />
     </div>
   );
